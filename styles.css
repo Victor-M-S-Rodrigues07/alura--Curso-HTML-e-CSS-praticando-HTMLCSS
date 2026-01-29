@@ -5,6 +5,9 @@
     --background-color: #00030C;
     --button-color: #167BF7;
     --main-font: "Inter";
+    --hover-botao-cor: #60e7ff;
+    --active-ancora-cor: #ffee00;
+    --botao-azul-efeito: #001aff;
 }
 
 * {
@@ -66,10 +69,20 @@ body {
     text-decoration: none;
 }
 
+.container-padrao__botao:hover {
+
+    background-color: var(--botao-azul-efeito);
+}
+
 .botao-secundario {
 
     background-color: transparent;
     border: 2px solid var(--title-color);
+}
+
+.botao-secundario:hover {
+
+    background-color: var(--botao-azul-efeito);
 }
 
 .container-padrao__aviso {
@@ -159,6 +172,16 @@ body {
     font-size: 16px;
     color: var(--title-color);
     text-decoration: none;
+}
+
+.link-rodape:hover {
+
+    color: var(--hover-botao-cor);
+}
+
+.link-rodape:active {
+
+    color: var(--active-ancora-cor);
 }
 
 .rodape__texto {
