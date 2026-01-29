@@ -1,10 +1,10 @@
 :root {
 
-    --cor-fundo: #00030C;
-    --cor-primaria: #FFFFFF;
-    --cor-destaque-botao: #167BF7;
-    --cor-secundaria: #C0C0C0;
-    --fonte-principal: "Inter";
+    --title-color: #FFFFFF;
+    --subtitle-color: #C0C0C0;
+    --background-color: #00030C;
+    --button-color: #167BF7;
+    --main-font: "Inter";
 }
 
 * {
@@ -15,95 +15,95 @@
 
 body {
 
-    background-color: var(--cor-fundo);
-    color: var(--cor-primaria);
-    font-family: var(--fonte-principal);
+    background-color: var(--background-color);
+    color: var(--title-color);
+    font-family: var(--main-font);
+    font-size: 16px;
     font-weight: 400;
 }
 
-.main__principal {
+.principal {
 
-    background-image: url("Imagens/Background.png");
+    background-image: url(/Imagens/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center;
     text-align: center;
+    align-items: center;
 }
 
-.container {
+.container-padrao {
 
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.container__caixa__div {
+.container-principal__divisao {
 
     margin: 0 7em;
 }
 
-.container__titulo {
+.container-padrao__titulo {
 
     font-size: 28px;
     font-weight: 700;
 }
 
-.container__imagem {
+.container-padrao__imagem {
 
-    margin: 2em 0em 4em 0em;
+    margin: 1em 0 2em 0;
 }
 
-.container__botao {
+.container-padrao__botao {
 
-    background-color: var(--cor-destaque-botao);
-    border-radius: 8px;
-    padding: 1em;
-    font-size: 16px;
-    text-decoration: none;
-    color: var(--cor-primaria);
-    display: block;
+    background-color: var(--button-color);
     margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 7px;
+    color: var(--title-color);
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
-.botao__secundario {
+.botao-secundario {
 
     background-color: transparent;
-    border: 2px solid var(--cor-primaria);
+    border: 2px solid var(--title-color);
 }
 
-.container__aviso {
+.container-padrao__aviso {
 
-    color: var(--cor-secundaria);
+    color: var(--subtitle-color);
     font-size: 12px;
 }
 
-.container__secundario {
+.container-secundario {
 
-    margin: 0 10em;
     align-items: center;
+    margin: 0 15em;
 }
 
-.container__secundario__imagem {
+.container-secundario__imagem {
 
     width: 80%;
-    margin-left: 3em;
+    margin-left: 4em;
 }
 
-.container__secundario__titulo {
+.divisao__titulo {
 
     font-weight: 700;
     font-size: 48px;
-    color: var(--cor-primaria);
     margin-bottom: 0.2em;
 }
 
-.container__secundario__texto {
+.divisao__paragrafo {
 
-    color: var(--cor-secundaria);
+    color: var(--subtitle-color);
     font-size: 16px;
 }
 
-.container__botao__secundario {
+.container-secundario-botao {
 
     display: inline-block;
     margin-top: 1em;
